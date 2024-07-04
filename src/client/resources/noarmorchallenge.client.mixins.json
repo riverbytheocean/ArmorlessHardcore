@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "lol.praenyth.mods.noarmorchallenge.mixin.client",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "ChatComponentMixin",
+    "DebugHudMixin",
+    "PerspectiveMixin",
+    "PlayerListMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

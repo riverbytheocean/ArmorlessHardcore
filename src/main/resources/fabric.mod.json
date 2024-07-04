@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "noarmorchallenge",
+	"version": "${version}",
+	"name": "NoArmorChallenge",
+	"description": "Read the GitHub/Modrinth description.",
+	"authors": [
+		"Praenyth"
+	],
+	"contact": {
+		"homepage": "https://github.com/Praenyth",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/noarmorchallenge/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"lol.praenyth.mods.noarmorchallenge.NoArmorChallenge"
+		],
+		"client": [
+			"lol.praenyth.mods.noarmorchallenge.NoArmorChallengeClient"
+		]
+	},
+	"mixins": [
+		"noarmorchallenge.mixins.json",
+		{
+			"config": "noarmorchallenge.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
